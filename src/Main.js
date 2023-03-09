@@ -8,7 +8,7 @@ const Main = ({ activeNote, onUpdateNote, onDeleteNote, onAddNote }) => {
   const [isEditing, setIsEditing] = useState(true);
   const [viewMode, setViewMode] = useState("editor-body-edit");
   const [value, setValue] = useState(activeNote?.body || "");
-  const [selectedDate, setSelectedDate] = useState("");
+  
 
   useEffect(() => {
     setValue(activeNote?.body || "");
